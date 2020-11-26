@@ -1,40 +1,92 @@
 
-.navbar-inverse{
+.navbar-inverse
+{
     margin-bottom: $gap * 5.3333333333;
+
     border-color: transparent;
     background-color: darken($color-dark, 4%);
-}
 
 
-.navbar-inverse .navbar-nav > li >a{
-    transition:background-color 0.5s;
-    border-radius: 4px;
-    &:hover,
-    &:focus{
-        background-color: $color-primary;
+    .navbar-nav > li > a
+    {
+        transition: background-color .5s;
+
+        &:hover,
+        &:focus
+        {
+            background-color: $color-primary;
+        }
+
+        @include sm-min
+        {
+            border-radius: 4px;
+        }
+
+        @include sm{
+            text-align: center;
+        }
+
+       
+    }
+
+
+    .navbar-nav > .active > a
+    {
+        background-color: $color-primary-dark;
+
+
+        &:hover,
+        &:focus
+        {
+            background-color: $color-primary-light;
+        }
     }
 }
 
 
 
-.navbar-inverse .navbar-nav > .active > a{
-    background-color: $color-primary-dark;
-    
 
-    &:hover,
-    &:focus{
-        background-color: $color-primary-light;
-
+.navbar-left
+{
+    @include sm-min
+    {
+        li
+        {
+            margin: 5px 5px 5px 0;
+        }
     }
-
+    @include sm
+    {
+        margin-bottom: 0;
+    }
 }
 
-.navbar-left li{
-    margin: 5px 5px 5px 0px;
-
+.navbar-right
+{
+    @include sm-min
+    {
+        li
+        {
+            margin: 5px 0 5px 5px;
+        }
+    }
+    @include sm
+    {
+        margin-top: 0;
+    }
 }
 
-.navbar-right li{
-    margin: 5px 0px 5px 5px;
 
+
+
+.navbar-toggle
+{
+    float: none;
+
+    margin-right: 0;
+}
+
+.navbar-header
+{
+    text-align: center;
 }
