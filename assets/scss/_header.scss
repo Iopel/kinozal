@@ -1,7 +1,7 @@
 
 .header
 {
-    @extend %margin-bottom-lg;
+    //@extend %margin-bottom-lg;
 }
 
 
@@ -25,8 +25,8 @@
 
         display: block;
         color: $color-accent;
-        //@extend text-shadow;
-        text-shadow: 0 0 5px darken($color-dark, 14%), 0 0 20px darken($color-dark, 14%);
+        @extend %text-shadow;
+        //text-shadow: 0 0 5px darken($color-dark, 14%), 0 0 20px darken($color-dark, 14%);
         
         @include xs-min{
             margin-right: -$gap;
@@ -50,8 +50,8 @@
         letter-spacing: .2em;
 
         color: $color-light ;
-        //@extend text-shadow;
-        text-shadow: 0 0 5px darken($color-dark, 14%), 0 0 20px darken($color-dark, 14%);
+        @extend %text-shadow;
+        //text-shadow: 0 0 5px darken($color-dark, 14%), 0 0 20px darken($color-dark, 14%);
 
     }
 }
