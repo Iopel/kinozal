@@ -100,6 +100,11 @@
    
 }
 
+.panel-title{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.panel-title,
 .panel-info>.panel-heading {
     color: $color-light;
     background-color: $color-accent;
