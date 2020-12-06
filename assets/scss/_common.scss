@@ -3,6 +3,7 @@ html
     font-size: $font-size;
 
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 body
@@ -78,6 +79,10 @@ h3{
     @include xs{
         font-size: 1.25rem;
     }
+}
+
+h4{
+    font-size: 1.125;
 }
 
 a
